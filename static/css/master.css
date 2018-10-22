@@ -1,0 +1,127 @@
+@font-face{
+	font-family: 'aven';
+	src: url('../fonts/a3.ttf');
+}
+body{
+  background: black;
+  color: white !important;
+  font-family: aven !important;
+}
+#myform{
+  width: 340px;
+  max-height: 840px;
+  background: rgba(115, 116, 117, 0.52);
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: inherit;
+  position: absolute;
+  top: 34%;
+  left: 38%;
+}
+
+h1{
+  font-size: 30px;
+}
+h3{
+  font-size: 15px;
+}
+label{
+  color: aqua;
+  text-align: center;
+}
+
+#one input{
+  padding: 10px;
+  font-family: aven;
+  border: 0;
+  border-bottom: 2px solid aqua;
+  background: transparent;
+}
+#two input{
+  padding: 10px;
+  font-family: aven;
+  border: 0;
+  border-bottom: 2px solid aqua;
+  background: transparent;
+}
+#three input{
+  padding: 10px;
+  font-family: aven;
+  border: 0;
+  border-bottom: 2px solid aqua;
+  background: transparent;
+}
+#four input{
+  padding: 10px;
+  font-family: aven;
+  border: 0;
+  border-bottom: 2px solid aqua;
+  background: transparent;
+}
+
+.pwinp{
+  padding: 10px;
+  font-family: aven;
+  border: 0;
+  border-bottom: 2px solid aqua;
+  background: transparent;
+}
+
+#team_name{
+  padding: 10px;
+  font-family: aven;
+  border: 0;
+  border-bottom: 2px solid aqua;
+  background: transparent;
+}
+#members{
+  padding: 10px;
+  font-family: aven;
+  width: 280px;
+  border: 0;
+  border-bottom: 2px solid aqua;
+  background: transparent;
+}
+.regbtn{
+  padding: 10px;
+  font-family: aven;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid aqua;
+  color: #212223;
+}
+.regbtn:hover{
+  background: grey;
+  color: aqua;
+  border: 2px solid grey;
+}
+
+@media only screen and (max-width: 768px) {
+  #myform{
+    left: 5%;
+  }
+  #members{
+    width: 200px;
+  }
+  #team_name{
+    width: 200px;
+  }
+  #one input{
+    width: 200px;
+  }
+  #two input{
+    width: 200px;
+  }
+  #three input{
+    width: 200px;
+  }
+  #four input{
+    width: 200px;
+  }
+  .pwinp{
+    width: 200px;
+  }
+}
