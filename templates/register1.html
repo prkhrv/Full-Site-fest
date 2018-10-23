@@ -9,6 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <meta name="mobile-web-app-capable" content="yes">
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
 
     <title>Register</title>
     <link rel="stylesheet" href="{% static "css/master.css" %}">
@@ -20,7 +21,43 @@
      <div id="particles-js"></div>
     <center>
     <h1>{{event_name}}</h1><br>
-    <h3> {{event_description}}</h3><br>
+    <div id="desc">
+        <h4> {{event_description}}</h4><br>
+    </div>
+    <div id="regdetails">
+    <div id="rules">
+      <h3>Rules</h3>
+      <ul style="list-style-type:disc">
+        {% for a in rules %}
+        <li>{{a}}</li>
+        {% endfor %}
+      </ul>
+
+
+    </div>
+
+    <div id="judge">
+      <h3>Juding Criteria</h3>
+      <ul style="list-style-type:disc">
+        {% for b in judge %}
+        <li>{{b}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div id="schedule">
+       <h3>Schedule :- {{schedule}}</h3>
+    </div>
+    <div id="venue">
+      <h3>Venue :- {{venue}}</h3>
+    </div>
+    <div id="contact">
+      <h3>Contact:</h3>
+      <ul style="list-style-type:disc">
+        {% for c in contact %}
+        <li>{{c}}</li>
+        {% endfor %}
+      </ul>
+    </div></div>
 
   <div class="notm" style="position: fixed; top:37.5%; height: 100%; width: 100%;">
    <div class="arc_reactor">
